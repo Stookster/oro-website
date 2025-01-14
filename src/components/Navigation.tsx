@@ -11,9 +11,9 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <a href="#music" className="text-white hover:text-gray-300 transition-colors">MUSIC</a>
+            <a href="#tour" className="text-white hover:text-gray-300 transition-colors">TOUR</a>
             <a href="#video" className="text-white hover:text-gray-300 transition-colors">VIDEO</a>
             <a href="#about" className="text-white hover:text-gray-300 transition-colors">ABOUT</a>
-            <a href="#tour" className="text-white hover:text-gray-300 transition-colors">TOUR</a>
             <a 
               href="https://oroband.bandcamp.com/merch" 
               target="_blank" 
@@ -74,6 +74,13 @@ const Navigation = () => {
                 MUSIC
               </a>
               <a
+                href="#tour"
+                className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
+                onClick={() => setIsOpen(false)}
+              >
+                TOUR
+              </a>
+              <a
                 href="#video"
                 className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
                 onClick={() => setIsOpen(false)}
@@ -86,13 +93,6 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
               >
                 ABOUT
-              </a>
-              <a
-                href="#tour"
-                className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
-                onClick={() => setIsOpen(false)}
-              >
-                TOUR
               </a>
               <a
                 href="https://oroband.bandcamp.com/merch"

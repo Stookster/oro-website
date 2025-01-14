@@ -13,9 +13,9 @@ const Index = () => {
       <Navigation />
       <Hero />
       <LatestRelease />
+      <TourDates />
       <VideoSection />
       <About />
-      <TourDates />
       <Footer />
       <BackToTop />
     </div>
