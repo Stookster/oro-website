@@ -8,7 +8,7 @@ interface MobileMenuProps {
 const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
   return (
     <div 
-      className={`fixed inset-0 bg-black/80 backdrop-blur-sm transition-all duration-300 md:hidden ${
+      className={`fixed inset-0 h-screen bg-black/80 backdrop-blur-sm transition-all duration-300 md:hidden ${
         isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
       onClick={() => setIsOpen(false)}
