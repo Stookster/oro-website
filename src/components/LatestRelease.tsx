@@ -1,4 +1,4 @@
-import { Music4, Music2, Youtube } from "lucide-react";
+import { Music4, Music2 } from "lucide-react";
 
 const LatestRelease = () => {
   return (
@@ -42,15 +42,6 @@ const LatestRelease = () => {
                 >
                   <Music2 className="w-5 h-5" />
                   <span>Apple Music</span>
-                </a>
-                <a 
-                  href="https://www.youtube.com/@oro_gloom" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
-                >
-                  <Youtube className="w-5 h-5" />
-                  <span>YouTube</span>
                 </a>
               </div>
             </div>
