@@ -18,7 +18,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-2">{contact.type}</h3>
               <a 
                 href={`mailto:${contact.email}`}
-                className="text-sm text-[#9b87f5] hover:text-[#8B5CF6] transition-colors"
+                className="text-sm text-gray-400 hover:text-white transition-colors"
               >
                 {contact.email}
               </a>
