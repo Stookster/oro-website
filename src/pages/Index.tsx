@@ -4,6 +4,7 @@ import LatestRelease from "@/components/LatestRelease";
 import VideoSection from "@/components/VideoSection";
 import About from "@/components/About";
 import TourDates from "@/components/TourDates";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <TourDates />
       <VideoSection />
       <About />
+      <Contact />
       <Footer />
       <BackToTop />
     </div>

@@ -57,6 +57,13 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
             ABOUT
           </a>
           <a
+            href="#contact"
+            className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
+            onClick={() => setIsOpen(false)}
+          >
+            CONTACT
+          </a>
+          <a
             href="https://oroband.bandcamp.com/merch"
             target="_blank"
             rel="noopener noreferrer"
