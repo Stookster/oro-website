@@ -1,15 +1,23 @@
 const TourDates = () => {
   const tours = [
-    { date: "MAR 15", venue: "The Arena", location: "New York, NY", ticketLink: "#" },
-    { date: "MAR 18", venue: "Metro", location: "Chicago, IL", ticketLink: "#" },
-    { date: "MAR 21", venue: "The Wiltern", location: "Los Angeles, CA", ticketLink: "#" },
-    { date: "MAR 25", venue: "Paramount", location: "Seattle, WA", ticketLink: "#" },
+    { 
+      date: "MAY 30", 
+      venue: "VALO ROCK", 
+      location: "Vadsø, Norway", 
+      ticketLink: "#" 
+    },
+    { 
+      date: "MAY 31", 
+      venue: "Vaterland", 
+      location: "Oslo, Norway", 
+      ticketLink: "#" 
+    },
   ];
 
   return (
     <section id="tour" className="bg-metal-gray py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">TOUR DATES</h2>
+        <h2 className="text-4xl font-bold text-white mb-12 text-center tracking-wider">TOUR DATES</h2>
         
         <div className="space-y-4">
           {tours.map((tour, index) => (
