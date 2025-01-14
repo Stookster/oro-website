@@ -19,13 +19,14 @@ const Hero = () => {
     <div className="relative h-screen overflow-hidden">
       {/* Background image with parallax effect */}
       <div 
-        className="absolute inset-0 bg-black transition-transform duration-300 ease-out"
+        className="absolute inset-0 bg-black"
         style={{ 
           backgroundImage: "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/lovable-uploads/009f3bb9-d154-493a-a72c-2dd1146db6b2.png')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          transform: `translateY(${scrollPosition * 0.5}px)`
+          transform: `translateY(${scrollPosition * 0.3}px)`,
+          transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
         }}
       />
       
@@ -34,8 +35,8 @@ const Hero = () => {
         <div 
           className="animate-fade-in"
           style={{ 
-            transform: `translateY(${scrollPosition * 0.2}px)`,
-            transition: 'transform 0.3s ease-out'
+            transform: `translateY(${scrollPosition * 0.1}px)`,
+            transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
           }}
         >
           <div className="w-48 md:w-64 mx-auto mb-6 hover:scale-105 transition-transform duration-300">
