@@ -19,11 +19,11 @@ const TourDates = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-white mb-12 text-center tracking-wider">TOUR DATES</h2>
         
-        <div className="space-y-4">
+        <div className="space-y-4 md:w-3/4 mx-auto">
           {tours.map((tour, index) => (
             <div 
               key={index}
-              className="bg-metal-light p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0"
+              className="bg-metal-light p-6 flex flex-col sm:flex-row items-center sm:items-center justify-between space-y-4 sm:space-y-0 text-center sm:text-left"
             >
               <div className="flex-1">
                 <div className="text-xl font-bold text-white">{tour.date}</div>
