@@ -20,7 +20,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-3">{contact.type}</h3>
               <a 
                 href={`mailto:${contact.email}`}
-                className="text-lg text-[#9b87f5] hover:text-[#8B5CF6] transition-colors inline-block w-full overflow-hidden text-ellipsis"
+                className="text-lg text-[#9b87f5] hover:text-[#8B5CF6] transition-colors break-words"
               >
                 {contact.email}
               </a>
