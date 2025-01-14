@@ -30,7 +30,7 @@ const About = () => {
               className="w-full rounded-lg shadow-xl cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
               onClick={() => setIsImageOpen(true)}
             />
-            <p className="text-sm text-gray-500 mt-2 text-right">Photo: Camilla Björkgren</p>
+            <p className="text-xs text-gray-500 mt-2 text-right">Photo: Camilla Björkgren</p>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ const About = () => {
               alt="ORO Band Photo"
               className="max-h-[90vh] max-w-[90vw] object-contain animate-scale-in"
             />
-            <p className="text-gray-400 mt-4">Photo: Camilla Björkgren</p>
+            <p className="text-xs text-gray-400 mt-4">Photo: Camilla Björkgren</p>
           </div>
         </div>
       )}
