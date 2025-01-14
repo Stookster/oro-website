@@ -1,5 +1,3 @@
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 
 const Contact = () => {
@@ -16,11 +14,11 @@ const Contact = () => {
         
         <div className="grid gap-6 md:grid-cols-3">
           {contactInfo.map((contact) => (
-            <Card key={contact.type} className="p-6 bg-metal-light hover:bg-metal-gray transition-colors">
-              <h3 className="text-xl font-bold mb-3">{contact.type}</h3>
+            <Card key={contact.type} className="p-6 bg-metal-light hover:bg-metal-gray transition-colors flex flex-col items-center">
+              <h3 className="text-xl font-bold mb-2">{contact.type}</h3>
               <a 
                 href={`mailto:${contact.email}`}
-                className="text-base text-[#9b87f5] hover:text-[#8B5CF6] transition-colors break-words"
+                className="text-sm text-[#9b87f5] hover:text-[#8B5CF6] transition-colors"
               >
                 {contact.email}
               </a>
