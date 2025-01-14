@@ -4,7 +4,7 @@ const TourDates = () => {
       date: "MAY 30", 
       venue: "VALO ROCK", 
       location: "Vadsø, Norway", 
-      ticketLink: "#" 
+      ticketLink: "https://kooperativet.ticketco.events/no/nb/e/riv_presenterer_valo_rock_2025?fbclid=IwY2xjawGWEKJleHRuA2FlbQIxMAABHeWZSoASZREsJNfoeMCN73GwiSAGN65n5ZiqzxnzcXF932lbWLRpBUT9PQ_aem_buls-AObaedyKXGbFpbKsA" 
     },
     { 
       date: "MAY 31", 
@@ -32,6 +32,8 @@ const TourDates = () => {
               </div>
               <a 
                 href={tour.ticketLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-metal-dark px-6 py-2 font-bold hover:bg-gray-200 transition-colors"
               >
                 TICKETS
