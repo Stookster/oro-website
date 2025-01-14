@@ -13,7 +13,20 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const recipientEmail = inquiryType === "info" ? "info@orosweden.com" : "booking@orosweden.com";
+    let recipientEmail;
+    switch (inquiryType) {
+      case "info":
+        recipientEmail = "info@orosweden.com";
+        break;
+      case "booking":
+        recipientEmail = "booking@orosweden.com";
+        break;
+      case "press":
+        recipientEmail = "press@orosweden.com";
+        break;
+      default:
+        recipientEmail = "info@orosweden.com";
+    }
     
     // In a real application, this would be handled by a backend service
     console.log(`Sending email to: ${recipientEmail}`);
@@ -38,7 +51,7 @@ const Contact = () => {
               defaultValue="info"
               value={inquiryType}
               onValueChange={setInquiryType}
-              className="flex gap-4"
+              className="flex flex-wrap gap-4"
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="info" id="info" />
@@ -47,6 +60,10 @@ const Contact = () => {
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="booking" id="booking" />
                 <Label htmlFor="booking">Booking</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="press" id="press" />
+                <Label htmlFor="press">Press</Label>
               </div>
             </RadioGroup>
           </div>
