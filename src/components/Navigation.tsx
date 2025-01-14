@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { X } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,6 +56,15 @@ const Navigation = () => {
             }`}
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Close button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-4 right-4 p-2 text-white hover:text-gray-300 transition-colors"
+              aria-label="Close menu"
+            >
+              <X className="h-6 w-6" />
+            </button>
+
             <div className="flex flex-col items-end pt-20 px-6 space-y-6">
               <a
                 href="#music"
