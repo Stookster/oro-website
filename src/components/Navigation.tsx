@@ -9,6 +9,7 @@ const Navigation = () => {
         <div className="flex justify-end items-center py-4">
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
+            <a href="#about" className="text-white hover:text-gray-300 transition-colors">ABOUT</a>
             <a href="#music" className="text-white hover:text-gray-300 transition-colors">MUSIC</a>
             <a href="#tour" className="text-white hover:text-gray-300 transition-colors">TOUR</a>
             <a 
@@ -43,6 +44,13 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-metal-dark">
+              <a
+                href="#about"
+                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
+                onClick={() => setIsOpen(false)}
+              >
+                ABOUT
+              </a>
               <a
                 href="#music"
                 className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
