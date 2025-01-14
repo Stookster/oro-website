@@ -26,7 +26,7 @@ const LatestRelease = () => {
               <p className="text-gray-400">Available on:</p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a 
-                  href="https://open.spotify.com/artist/5Qw4hhGVAXQWPKmHWAhgAe?si=Ue_Xt-sBQPGLPBbGKFmqww" 
+                  href="https://open.spotify.com/artist/3GWrGtD5slUBfW2o5ugDpp?si=-Ynwrt4YRFeQMu2j93NhpQ" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
@@ -35,7 +35,7 @@ const LatestRelease = () => {
                   <span>Spotify</span>
                 </a>
                 <a 
-                  href="https://music.apple.com/se/artist/oro/1498449386" 
+                  href="https://music.apple.com/se/artist/oro/344822804" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
