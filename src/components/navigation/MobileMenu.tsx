@@ -14,7 +14,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
       onClick={() => setIsOpen(false)}
     >
       <div 
-        className={`fixed right-0 top-0 h-full w-64 bg-black/95 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed right-0 top-0 bottom-0 h-screen w-64 bg-metal-dark transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         onClick={(e) => e.stopPropagation()}
