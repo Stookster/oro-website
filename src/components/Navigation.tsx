@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Logo from "./Logo";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +7,6 @@ const Navigation = () => {
     <nav className="fixed w-full z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <a href="/" className="flex-shrink-0">
-            <Logo />
-          </a>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <a href="#music" className="text-white hover:text-gray-300 transition-colors">MUSIC</a>

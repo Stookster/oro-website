@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import LatestRelease from "@/components/LatestRelease";
 import TourDates from "@/components/TourDates";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <LatestRelease />
       <TourDates />
       <Footer />
+      <BackToTop />
     </div>
   );
 };
