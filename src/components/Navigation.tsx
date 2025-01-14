@@ -66,14 +66,11 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         <div 
-          className={`fixed inset-0 transition-opacity duration-300 md:hidden ${
+          className={`fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
             isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
           onClick={() => setIsOpen(false)}
         >
-          {/* Semi-transparent overlay */}
-          <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
-          
           {/* Menu panel */}
           <div 
             className={`absolute right-0 top-0 h-screen w-64 bg-black transform transition-transform duration-300 ease-in-out ${
