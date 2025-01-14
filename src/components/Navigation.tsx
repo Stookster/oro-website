@@ -10,6 +10,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <a href="#music" className="text-white hover:text-gray-300 transition-colors">MUSIC</a>
+            <a href="#video" className="text-white hover:text-gray-300 transition-colors">VIDEO</a>
             <a href="#about" className="text-white hover:text-gray-300 transition-colors">ABOUT</a>
             <a href="#tour" className="text-white hover:text-gray-300 transition-colors">TOUR</a>
             <a 
@@ -50,6 +51,13 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
               >
                 MUSIC
+              </a>
+              <a
+                href="#video"
+                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
+                onClick={() => setIsOpen(false)}
+              >
+                VIDEO
               </a>
               <a
                 href="#about"
