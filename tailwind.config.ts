@@ -18,6 +18,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        cinzel: ['Cinzel', 'serif'],
+      },
       colors: {
         metal: {
           dark: "#0A0A0A",
