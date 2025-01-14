@@ -1,4 +1,4 @@
-import { Music4, Music2 } from "lucide-react";
+import { Music2 } from "lucide-react";
 
 const LatestRelease = () => {
   return (
@@ -31,7 +31,11 @@ const LatestRelease = () => {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
                 >
-                  <Music4 className="w-5 h-5" />
+                  <img 
+                    src="/lovable-uploads/d01b6352-64cb-40e5-970a-1a8e46a8c630.png" 
+                    alt="Spotify" 
+                    className="w-5 h-5"
+                  />
                   <span>Spotify</span>
                 </a>
                 <a 
