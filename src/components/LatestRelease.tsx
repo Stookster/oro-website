@@ -44,7 +44,11 @@ const LatestRelease = () => {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
                 >
-                  <Music2 className="w-5 h-5" />
+                  <img 
+                    src="/lovable-uploads/6557f9ba-0e4b-4425-a8b6-02dc8fd86a4c.png" 
+                    alt="Apple Music" 
+                    className="w-5 h-5"
+                  />
                   <span>Apple Music</span>
                 </a>
               </div>
