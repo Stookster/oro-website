@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Music, Music2 } from "lucide-react";
+import { Facebook, Instagram, Youtube, Music2 } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -35,7 +35,12 @@ const Footer = () => {
             rel="noopener noreferrer" 
             className="text-gray-400 hover:text-white"
           >
-            <Music size={24} />
+            <img 
+              src="https://s4.bcbits.com/img/buttons/bandcamp_24x24_white.png" 
+              alt="Bandcamp"
+              width={24}
+              height={24}
+            />
           </a>
           <a 
             href="https://open.spotify.com/artist/3GWrGtD5slUBfW2o5ugDpp?si=sv8OAeGXRAah55bFRivXsA" 
