@@ -25,8 +25,7 @@ const Hero = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          transform: `translateY(${scrollPosition * 0.3}px)`,
-          transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
+          transform: `translateY(${scrollPosition * 0.3}px)`
         }}
       />
       
@@ -35,8 +34,7 @@ const Hero = () => {
         <div 
           className="animate-fade-in"
           style={{ 
-            transform: `translateY(${scrollPosition * 0.1}px)`,
-            transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
+            transform: `translateY(${scrollPosition * 0.1}px)`
           }}
         >
           <div className="w-48 md:w-64 mx-auto mb-6 hover:scale-105 transition-transform duration-300">
