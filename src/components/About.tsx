@@ -53,8 +53,8 @@ const About = () => {
               alt="ORO Band Photo"
               className="max-h-[90vh] max-w-[90vw] object-contain animate-scale-in"
             />
-            <p className="text-xs text-gray-400 mt-4">Photo: Camilla Björkgren</p>
             <p className="text-sm text-gray-400 mt-2">From left to right: Richard Stöök, Petter Cete, Jerker Rundlöf, Seb Andersson, John Stöök</p>
+            <p className="text-xs text-gray-400 mt-2">Photo: Camilla Björkgren</p>
           </div>
         </div>
       )}
