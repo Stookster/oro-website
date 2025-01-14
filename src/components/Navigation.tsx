@@ -26,7 +26,8 @@ const Navigation = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-white hover:text-gray-300 transition-colors"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             <span className="sr-only">Open menu</span>
             {isOpen ? (
@@ -42,33 +43,43 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-metal-dark">
+        <div 
+          className={`fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+            isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setIsOpen(false)}
+        >
+          <div 
+            className={`absolute right-0 top-0 h-screen w-64 bg-metal-dark transform transition-transform duration-300 ease-in-out ${
+              isOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex flex-col items-end pt-20 px-6 space-y-6">
               <a
                 href="#music"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
+                className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
                 onClick={() => setIsOpen(false)}
               >
                 MUSIC
               </a>
               <a
                 href="#video"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
+                className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
                 onClick={() => setIsOpen(false)}
               >
                 VIDEO
               </a>
               <a
                 href="#about"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
+                className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
                 onClick={() => setIsOpen(false)}
               >
                 ABOUT
               </a>
               <a
                 href="#tour"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
+                className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
                 onClick={() => setIsOpen(false)}
               >
                 TOUR
@@ -77,14 +88,14 @@ const Navigation = () => {
                 href="https://oroband.bandcamp.com/merch"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
+                className="text-white hover:text-gray-300 transition-colors text-xl font-light tracking-wider"
                 onClick={() => setIsOpen(false)}
               >
                 MERCH
               </a>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
