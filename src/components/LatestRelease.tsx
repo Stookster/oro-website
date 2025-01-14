@@ -13,15 +13,17 @@ const LatestRelease = () => {
             />
           </div>
           
-          <div className="space-y-6">
+          <div className="space-y-6 text-center md:text-left">
             <h3 className="text-3xl font-bold text-white tracking-wider">VID VÄGS ÄNDE</h3>
             <p className="text-gray-400 text-lg">
               Experience the latest atmospheric masterpiece from ORO. A journey through darkness and light, 
               where haunting melodies meet crushing intensity.
             </p>
-            <button className="bg-white text-metal-dark px-8 py-3 font-bold hover:bg-gray-200 transition-colors tracking-wide">
-              LISTEN NOW
-            </button>
+            <div className="flex justify-center md:justify-start">
+              <button className="bg-white text-metal-dark px-8 py-3 font-bold hover:bg-gray-200 transition-colors tracking-wide">
+                LISTEN NOW
+              </button>
+            </div>
           </div>
         </div>
       </div>
