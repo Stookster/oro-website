@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <nav className="fixed w-full z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-end items-center py-4">
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <a href="#music" className="text-white hover:text-gray-300 transition-colors">MUSIC</a>
@@ -45,14 +45,14 @@ const Navigation = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 bg-metal-dark">
               <a
                 href="#music"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors"
+                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
                 onClick={() => setIsOpen(false)}
               >
                 MUSIC
               </a>
               <a
                 href="#tour"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors"
+                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
                 onClick={() => setIsOpen(false)}
               >
                 TOUR
@@ -61,7 +61,7 @@ const Navigation = () => {
                 href="https://oroband.bandcamp.com/merch"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors"
+                className="block px-3 py-2 text-white hover:text-gray-300 transition-colors text-right"
                 onClick={() => setIsOpen(false)}
               >
                 MERCH
