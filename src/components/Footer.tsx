@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Music2 } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -28,27 +28,6 @@ const Footer = () => {
             className="text-gray-400 hover:text-white"
           >
             <Youtube size={24} />
-          </a>
-          <a 
-            href="https://oroband.bandcamp.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-gray-400 hover:text-white"
-          >
-            <img 
-              src="https://s4.bcbits.com/img/buttons/bandcamp_24x24_white.png" 
-              alt="Bandcamp"
-              width={24}
-              height={24}
-            />
-          </a>
-          <a 
-            href="https://open.spotify.com/artist/3GWrGtD5slUBfW2o5ugDpp?si=sv8OAeGXRAah55bFRivXsA" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-gray-400 hover:text-white"
-          >
-            <Music2 size={24} />
           </a>
         </div>
         
