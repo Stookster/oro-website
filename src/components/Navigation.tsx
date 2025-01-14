@@ -23,8 +23,8 @@ const Navigation = () => {
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${hasScrolled ? 'md:bg-black/70 md:backdrop-blur-sm' : 'bg-transparent'}`}
       style={{
-        backgroundColor: `rgba(0, 0, 0, ${scrollProgress * 0.7})`,
-        backdropFilter: `blur(${scrollProgress * 8}px)`,
+        backgroundColor: `rgba(0, 0, 0, ${window.innerWidth >= 768 ? scrollProgress * 0.7 : 0})`,
+        backdropFilter: `blur(${window.innerWidth >= 768 ? scrollProgress * 8 : 0}px)`,
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
