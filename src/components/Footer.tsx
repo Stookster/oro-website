@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Music, Spotify } from "lucide-react";
+import { Facebook, Instagram, Youtube, Music, Music2 } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
             rel="noopener noreferrer" 
             className="text-gray-400 hover:text-white"
           >
-            <Spotify size={24} />
+            <Music2 size={24} />
           </a>
         </div>
         
