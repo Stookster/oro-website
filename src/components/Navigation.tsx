@@ -10,7 +10,7 @@ const Navigation = () => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 20);
       const scrollPosition = window.scrollY;
-      const headerHeight = 300; // Approximate height where we want the animation to complete
+      const headerHeight = 300;
       const progress = Math.min(scrollPosition / headerHeight, 1);
       setScrollProgress(progress);
     };
@@ -66,13 +66,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         <div 
-          className={`fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+          className={`fixed inset-0 bg-black/90 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
             isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
           onClick={() => setIsOpen(false)}
         >
           <div 
-            className={`absolute right-0 top-0 h-screen w-64 bg-metal-dark transform transition-transform duration-300 ease-in-out ${
+            className={`absolute right-0 top-0 h-screen w-64 bg-black transform transition-transform duration-300 ease-in-out ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
             onClick={(e) => e.stopPropagation()}
