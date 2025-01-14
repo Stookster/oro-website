@@ -1,109 +1,32 @@
-import { useState } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 const Contact = () => {
-  const [inquiryType, setInquiryType] = useState("info");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    let recipientEmail;
-    switch (inquiryType) {
-      case "info":
-        recipientEmail = "info@orosweden.com";
-        break;
-      case "booking":
-        recipientEmail = "booking@orosweden.com";
-        break;
-      case "press":
-        recipientEmail = "press@orosweden.com";
-        break;
-      default:
-        recipientEmail = "info@orosweden.com";
-    }
-    
-    // In a real application, this would be handled by a backend service
-    console.log(`Sending email to: ${recipientEmail}`);
-    console.log("Form data:", { name, email, message, inquiryType });
-    
-    // Reset form
-    setName("");
-    setEmail("");
-    setMessage("");
-    setInquiryType("info");
-  };
+  const contactInfo = [
+    { type: "General Info", email: "info@orosweden.com" },
+    { type: "Booking", email: "booking@orosweden.com" },
+    { type: "Press", email: "press@orosweden.com" }
+  ];
 
   return (
     <section id="contact" className="py-20 bg-metal-gray">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-12">CONTACT</h2>
         
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="space-y-4">
-            <Label>Inquiry Type</Label>
-            <RadioGroup
-              defaultValue="info"
-              value={inquiryType}
-              onValueChange={setInquiryType}
-              className="flex flex-wrap gap-4"
-            >
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="info" id="info" />
-                <Label htmlFor="info">General Info</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="booking" id="booking" />
-                <Label htmlFor="booking">Booking</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="press" id="press" />
-                <Label htmlFor="press">Press</Label>
-              </div>
-            </RadioGroup>
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="name">Name</Label>
-            <Input
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
-            <Textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-              className="min-h-[150px]"
-            />
-          </div>
-
-          <Button type="submit" className="w-full">
-            Send Message
-          </Button>
-        </form>
+        <div className="grid gap-6 md:grid-cols-3">
+          {contactInfo.map((contact) => (
+            <Card key={contact.type} className="p-6 bg-metal-light hover:bg-metal-gray transition-colors">
+              <h3 className="text-xl font-bold mb-3">{contact.type}</h3>
+              <a 
+                href={`mailto:${contact.email}`}
+                className="text-lg text-[#9b87f5] hover:text-[#8B5CF6] transition-colors break-all"
+              >
+                {contact.email}
+              </a>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );
