@@ -1,3 +1,5 @@
+import { Spotify, Music2, Youtube } from "lucide-react";
+
 const LatestRelease = () => {
   return (
     <section id="music" className="bg-metal-dark py-20">
@@ -19,10 +21,38 @@ const LatestRelease = () => {
               Experience the latest atmospheric masterpiece from ORO. A journey through darkness and light, 
               where haunting melodies meet crushing intensity.
             </p>
-            <div className="flex justify-center md:justify-start">
-              <button className="bg-white text-metal-dark px-8 py-3 font-bold hover:bg-gray-200 transition-colors tracking-wide">
-                LISTEN NOW
-              </button>
+            
+            <div className="flex flex-col space-y-4">
+              <p className="text-gray-400">Available on:</p>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                <a 
+                  href="https://open.spotify.com/artist/5Qw4hhGVAXQWPKmHWAhgAe?si=Ue_Xt-sBQPGLPBbGKFmqww" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
+                >
+                  <Spotify className="w-5 h-5" />
+                  <span>Spotify</span>
+                </a>
+                <a 
+                  href="https://music.apple.com/se/artist/oro/1498449386" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
+                >
+                  <Music2 className="w-5 h-5" />
+                  <span>Apple Music</span>
+                </a>
+                <a 
+                  href="https://www.youtube.com/@oro_gloom" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
+                >
+                  <Youtube className="w-5 h-5" />
+                  <span>YouTube</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
