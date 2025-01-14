@@ -4,10 +4,15 @@ import { X } from "lucide-react";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 20);
+      const scrollPosition = window.scrollY;
+      const headerHeight = 300; // Approximate height where we want the animation to complete
+      const progress = Math.min(scrollPosition / headerHeight, 1);
+      setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -15,7 +20,13 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${hasScrolled ? 'md:bg-black/70 md:backdrop-blur-sm' : 'bg-transparent'}`}>
+    <nav 
+      className={`fixed w-full z-50 transition-all duration-300 ${hasScrolled ? 'md:bg-black/70 md:backdrop-blur-sm' : 'bg-transparent'}`}
+      style={{
+        backgroundColor: `rgba(0, 0, 0, ${scrollProgress * 0.7})`,
+        backdropFilter: `blur(${scrollProgress * 8}px)`,
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-end items-center py-4">
           {/* Desktop Navigation */}
