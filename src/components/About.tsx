@@ -1,0 +1,34 @@
+const About = () => {
+  return (
+    <section id="about" className="bg-metal-light py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-bold text-white mb-12 text-center tracking-wider">ABOUT</h2>
+        
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <p className="text-gray-400 text-lg leading-relaxed">
+              Emerging from the depths of the Nordic metal scene, ORO crafts a unique blend of 
+              atmospheric black metal and post-metal elements. Their latest opus "Vid Vägs Ände" 
+              showcases the band's evolution into more experimental territories while staying true 
+              to their heavy roots.
+            </p>
+            <p className="text-gray-400 text-lg leading-relaxed">
+              The five-piece ensemble continues to push boundaries, creating immersive soundscapes 
+              that bridge the gap between crushing heaviness and ethereal atmosphere.
+            </p>
+          </div>
+          
+          <div className="relative">
+            <img 
+              src="/lovable-uploads/c1dcb9d4-8dc6-4b16-acb6-5537c89b9431.png"
+              alt="ORO Band Photo"
+              className="w-full rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import LatestRelease from "@/components/LatestRelease";
+import About from "@/components/About";
 import TourDates from "@/components/TourDates";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -11,6 +12,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <LatestRelease />
+      <About />
       <TourDates />
       <Footer />
       <BackToTop />
