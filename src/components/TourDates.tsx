@@ -10,7 +10,7 @@ const TourDates = () => {
       date: "MAY 31", 
       venue: "Vaterland", 
       location: "Oslo, Norway", 
-      ticketLink: "#" 
+      ticketLink: "https://www.vaterlandoslo.no/" 
     },
   ];
 
