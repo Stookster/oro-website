@@ -15,9 +15,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative h-full flex items-center justify-center text-center">
         <div className="animate-fade-in">
-          <h1 className="text-8xl md:text-9xl font-bold text-white mb-4 tracking-wider" style={{ fontFamily: "'Trajan Pro', serif" }}>
-            ORO
-          </h1>
+          <div className="w-48 md:w-64 mx-auto mb-6">
+            <img 
+              src="/lovable-uploads/ce4f176b-398e-4720-8822-1d3ebb7b266c.png"
+              alt="ORO Logo"
+              className="w-full h-auto"
+            />
+          </div>
           <p className="text-xl md:text-2xl text-gray-300 tracking-widest uppercase" style={{ fontFamily: "'Trajan Pro', serif" }}>
             Vid Vägs Ände
           </p>
