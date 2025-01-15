@@ -12,14 +12,11 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-gray-400 text-lg leading-relaxed md:text-left text-center">
-              Emerging from the depths of the Nordic metal scene, ORO crafts a unique blend of 
-              atmospheric black metal and post-metal elements. Their latest opus "Vid Vägs Ände" 
-              showcases the band's evolution into more experimental territories while staying true 
-              to their heavy roots.
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed md:text-left text-center">
-              The five-piece ensemble continues to push boundaries, creating immersive soundscapes 
-              that bridge the gap between crushing heaviness and ethereal atmosphere.
+              ORO was born beneath the Kilsbergen mountains, in the shadows of the deep forests that 
+              swathe those rocky slopes in 2014 and in the brief years of their existence they have 
+              forged a sound like no other. A towering, crushing magnificence is wrapped in coils of 
+              poignant intimacy and the fact that the band choose to sing in their native tongue only 
+              adds to the grim beauty of these powerful songs.
             </p>
           </div>
           
