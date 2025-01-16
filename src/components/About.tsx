@@ -22,7 +22,7 @@ const About = () => {
           
           <div className="relative group">
             <img 
-              src="/lovable-uploads/c1dcb9d4-8dc6-4b16-acb6-5537c89b9431.png"
+              src="/oro-website/lovable-uploads/c1dcb9d4-8dc6-4b16-acb6-5537c89b9431.png"
               alt="ORO Band Photo"
               className="w-full rounded-lg shadow-xl cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
               onClick={() => setIsImageOpen(true)}
@@ -46,7 +46,7 @@ const About = () => {
           </button>
           <div className="w-full h-full p-4 flex flex-col items-center justify-center">
             <img 
-              src="/lovable-uploads/c1dcb9d4-8dc6-4b16-acb6-5537c89b9431.png"
+              src="/oro-website/lovable-uploads/c1dcb9d4-8dc6-4b16-acb6-5537c89b9431.png"
               alt="ORO Band Photo"
               className="max-h-[90vh] max-w-[90vw] object-contain animate-scale-in"
             />

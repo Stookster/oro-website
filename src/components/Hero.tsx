@@ -21,7 +21,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-black"
         style={{ 
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/lovable-uploads/009f3bb9-d154-493a-a72c-2dd1146db6b2.png')",
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/oro-website/lovable-uploads/009f3bb9-d154-493a-a72c-2dd1146db6b2.png')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -39,7 +39,7 @@ const Hero = () => {
         >
           <div className="w-48 md:w-64 mx-auto mb-6 hover:scale-105 transition-transform duration-300">
             <img 
-              src="/lovable-uploads/ce4f176b-398e-4720-8822-1d3ebb7b266c.png"
+              src="/oro-website/lovable-uploads/ce4f176b-398e-4720-8822-1d3ebb7b266c.png"
               alt="ORO Logo"
               className="w-full h-auto"
             />

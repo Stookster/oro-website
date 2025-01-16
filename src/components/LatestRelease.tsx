@@ -9,7 +9,7 @@ const LatestRelease = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="aspect-square bg-metal-light">
             <img 
-              src="/lovable-uploads/009f3bb9-d154-493a-a72c-2dd1146db6b2.png"
+              src="/oro-website/lovable-uploads/009f3bb9-d154-493a-a72c-2dd1146db6b2.png"
               alt="Vid Vägs Ände Album Cover" 
               className="w-full h-full object-cover"
             />
@@ -32,7 +32,7 @@ const LatestRelease = () => {
                   className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
                 >
                   <img 
-                    src="/lovable-uploads/d01b6352-64cb-40e5-970a-1a8e46a8c630.png" 
+                    src="/oro-website/lovable-uploads/d01b6352-64cb-40e5-970a-1a8e46a8c630.png" 
                     alt="Spotify" 
                     className="w-5 h-5"
                   />
@@ -45,7 +45,7 @@ const LatestRelease = () => {
                   className="flex items-center space-x-2 bg-metal-light px-6 py-3 rounded-md hover:bg-metal-gray transition-colors"
                 >
                   <img 
-                    src="/lovable-uploads/6557f9ba-0e4b-4425-a8b6-02dc8fd86a4c.png" 
+                    src="/oro-website/lovable-uploads/6557f9ba-0e4b-4425-a8b6-02dc8fd86a4c.png" 
                     alt="Apple Music" 
                     className="w-5 h-5"
                   />
